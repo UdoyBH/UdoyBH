@@ -81,3 +81,10 @@
     </td>
   </tr>
 </table>
+
+<div class="right" style="display:flex; flex-direction: column; flex: 1 0 250px;">
+
+<img src="https://github.com/UdoyBH/UdoyBH/raw/main/metrics.classic.svg">
+
+<img src="https://github.com/UdoyBH/UdoyBH/raw/main/metrics.pins.svg">
+</div>
