@@ -9,16 +9,19 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Profile Stats
+        uses: lowlighter/metrics@latest
         with:
           filename: metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
 
-      - uses: lowlighter/metrics@latest
+      - name: Repo Pins
+        uses: lowlighter/metrics@latest
         with:
           filename: metrics.pins.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: repositories, pinned
-          plugin_lines: yes
+          base: ""
+          plugin_repositories: yes
+          plugin_repositories_pinned: 3
