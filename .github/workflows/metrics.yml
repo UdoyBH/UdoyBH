@@ -15,3 +15,10 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.pins.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: repositories, pinned
+          plugin_lines: yes
